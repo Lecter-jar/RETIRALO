@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo_responsivo.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+        <div class="logo">Re-Tiralo</div>
+       <nav class="activate">
+           <ul>
+               <li><a href="#" >Inicio</a></li>
+               <li class="sub-menu"><a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#">Retiro de escombros</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                    </ul>
+               </li>
+               <li><a href="#" >Equipo</a></li>
+               <li><a href="#" >Contacto</a></li>
+               <li><a href="#" >Quienes somos</a></li>
+               <li><a href="#">Crea tu cuenta</a></li>
+               <li><a href="#" >Ingresa</a></li>
+           </ul>
+       </nav>
+       <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+   </header> 
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('nav').toggleClass('activate');
+            })
+            $('ul li').click(function(){
+                $(this).siblings().removeClass('activate');
+                $(this).toggleClass('activate');
+            })
+        })
+    </script>
+    <br><br><br><br>
+</body>
+</html>
