@@ -3,14 +3,13 @@
     require_once("Persona.php");
     require_once("Usuario.php");
 
-    //$objUsuario = new Usuario('-5');
+    $objUsuario = new Usuario();
     $user = $_GET['user'];
     $password = $_GET['password'];
     
-    //$objUsuario->_nombre = $user;<
-    //$objUsuario->_contrasena = $password;
+    $objUsuario->_nombre = $user;
+    $objUsuario->_contrasena = $password;
     
-   // $objUsuario = Usuario::soloCorreoContraseña($user,$password);
     
     include 'db.php';
     

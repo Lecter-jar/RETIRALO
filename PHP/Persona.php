@@ -20,26 +20,10 @@ class Persona
 
     /**
      * Persona constructor.
-     * @param $_id
-     * @param $_rut
-     * @param $_nombre
-     * @param $_apellido
-     * @param $_fecha_nacimiento
-     * @param $_telefono
-     * @param $_email
-     * @param $_contrasena
-     * @param $_estado
      */
-    public function __construct($_rut, $_nombre, $_apellido, $_fecha_nacimiento, $_telefono, $_email, $_contrasena, $_estado)
+    public function __construct()
     {
-        $this->_rut = $_rut;
-        $this->_nombre = $_nombre;
-        $this->_apellido = $_apellido;
-        $this->_fecha_nacimiento = $_fecha_nacimiento;
-        $this->_telefono = $_telefono;
-        $this->_email = $_email;
-        $this->_contrasena = $_contrasena;
-        $this->_estado = $_estado;
+       
 
     } // fin constructor
 
