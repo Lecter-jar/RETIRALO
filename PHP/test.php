@@ -7,8 +7,8 @@
     $user = $_GET['user'];
     $password = $_GET['password'];
     
-    $objUsuario->_nombre = $user;
-    $objUsuario->_contrasena = $password;
+    //$objUsuario->_nombre = $user;
+    //$objUsuario->_contrasena = $password;
     
     
     include 'db.php';
@@ -21,7 +21,7 @@
     }*/
 
     
-     $query= "SELECT * from Usuario WHERE Nombre='$user' AND Contrasena='$password' OR 'E-mail'='$user' AND Contrasena='$password'";
+     $query= "SELECT * from Usuario WHERE Nombre='$user' AND Contrasena='$password' OR Email='$user' AND Contrasena='$password'";
      $resultado = $conn -> query($query);
      
      while($fila = $resultado -> fetch_array()){
@@ -29,8 +29,6 @@
      }
     echo json_encode($usuario);
     $resultado -> close();
-
-    
 
 ?>
     
